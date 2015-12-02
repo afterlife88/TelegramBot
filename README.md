@@ -1,6 +1,6 @@
 # Telegram Bot
 final task backend uawc
 
-Chek it out 
+Check it out
 
 https://telegram.me/uawebchallenge_bot
