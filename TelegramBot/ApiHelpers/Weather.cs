@@ -10,7 +10,7 @@ namespace TelegramBot.ApiHelpers
 {
     public class Weather
     {
-        private string AppID = "f25442a0a7071790046128d4b2ced700";
+        private string AppID = "KEY";
 
         public async Task<List<WeatherModel>> GetWeather(string location)
         {

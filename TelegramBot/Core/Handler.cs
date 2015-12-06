@@ -1,8 +1,6 @@
 ﻿using Telegram.Bot;
 using Telegram.Bot.Types;
-using TelegramBot.ApiHelpers;
 using TelegramBot.DataProcessing;
-using Weather = TelegramBot.ApiHelpers.Weather;
 
 namespace TelegramBot.Core
 {

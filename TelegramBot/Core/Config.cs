@@ -5,7 +5,7 @@
        /// <summary>
         /// Bot token 
         /// </summary>
-        public static string BotApiKey => "171339249:AAHZ80BK7OMxjTdvmOU0H5PKw3lTpiNWgvE";
+        public static string BotApiKey => "KEY";
 
         /// <summary>
         /// WebHook URL with secure https port
