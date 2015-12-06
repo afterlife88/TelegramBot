@@ -146,6 +146,9 @@
     </Compile>
     <Compile Include="Core\Handler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataProcessing\CommandsHandler.cs" />
+    <Compile Include="DataProcessing\CommandsDictionary.cs" />
+    <Compile Include="DataProcessing\ICommandsHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
