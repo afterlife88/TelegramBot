@@ -11,7 +11,7 @@ namespace TelegramBot.DataProcessing
 
         public  async Task<string> Start(string command)
         {
-            return "Привет! Я скромный бот, просто напиши /help и увидишь все мои возможности";
+            return "Hello! I am a humble bot, just write /help and see all my options";
         }
 
         public async Task<string> Weather(string command)
@@ -20,13 +20,13 @@ namespace TelegramBot.DataProcessing
             var arrayText = SplitUserTxt(command);
             if (arrayText.Length == 1)
             {
-                return "Укажите название города!";
+                return "Specify the name of the city!";
 
             }
             var list = await _weather.GetWeather(arrayText[1]);
             string response = null;
             foreach (var item in list)
-                response = $"Температура в городе {arrayText[1]}, Максимальная температура {item.MaxTemperature} минимальная температура {item.MinTemperature}";
+                response = $"The temperature in the city  {arrayText[1]}, Maximum temperature {item.MaxTemperature}, minimum temperature {item.MinTemperature}";
             return response;
         }
 
@@ -37,7 +37,7 @@ namespace TelegramBot.DataProcessing
             string response = null;
             foreach (var quote in listResponse.Quotes)
             {
-                response = $"Курс доллара к евро состоянием на  {quote.Value.Date} Покупка: {quote.Value.Ask,10} Продажа :{quote.Value.Bid,10}";
+                response = $"The dollar against the euro as of  {quote.Value.Date} Ask: {quote.Value.Ask,10} Bid :{quote.Value.Bid,10}";
             }
             return response;
         }
@@ -50,8 +50,8 @@ namespace TelegramBot.DataProcessing
 
         public async Task<string> Help(string command)
         {
-            return "Пример использования: \n/weather название города, \n/ExchangeRates -> курс валют, " +
-                   "\n/bash -> цитатник";
+            return "Example of use: \n/weather city name, \n/ExchangeRates ->  exchange rate " +
+                   "\n/bash -> russian quote pad";
         }
 
         private string[] SplitUserTxt(string text)

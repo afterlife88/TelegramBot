@@ -36,7 +36,7 @@ namespace TelegramBot.DataProcessing
             { 
                 return await _dictionary[arr[0]](name);
             }
-            return "Введена неверная команда, воспользуйтесь /help для информации";
+            return "An invalid command, use the / help for information";
 
         }
     }

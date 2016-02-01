@@ -154,9 +154,11 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="Properties\PublishProfiles\webhooktelegram - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\webhooktelegram - FTP.pubxml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\PublishProfiles\webhooktelegram - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\webhooktelegram - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
